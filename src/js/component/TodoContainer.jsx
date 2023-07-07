@@ -8,19 +8,13 @@ export default function TodoContainer() {
     const { todoList, setTodoList } = useContext(Context);
     const [userInput, setUserInput] = useState("");
 
-    // const onChangeHandler = (event) => setUserInput(event.target.value);
+
 
     const removeTodo = (index) => {
       setTodoList((previosTodos) => previosTodos.filter((_, i) => i !== index));
     };
 
-    // const addTodoHandler = (event) => {
 
-    //     if (event.key === 'Enter') {
-    //         setTodoList([...todoList, userInput]);
-    //         setUserInput("");
-    //     }
-    // }
 
     const taskList = todoList.map((task, index) => (
         <Todo
@@ -58,16 +52,3 @@ export default function TodoContainer() {
     );
 };
 
-        // <div className="card container text-center mt-4">
-            
-        //     <form onSubmit={(e) => e.preventDefault()}>
-        //         <input
-        //             value={userInput}
-        //             onChange={onChangeHandler}
-        //             onKeyUp={addTodoHandler}
-
-        //         />
-        //     </form>
-
-        //     {todoList.map((todo, index) => <Todo key={index} index={index} todo={todo} removeTodo={removeTodo} />)}
-        // </div>
