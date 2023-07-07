@@ -6,11 +6,16 @@ import {createRoot} from 'react-dom/client'
 import "../styles/index.css";
 
 //import your own components
-import Layout from './layout.js'
+// import Layout from './layout.js'
 
-//
+
 const root = createRoot(document.querySelector("#app"))
 
-//render your react application
-root.render(<Layout/>)
 
+root.render(<Router />)
+
+
+import Router from './component/Router.jsx'
+import Home from './component/home.jsx'
+
+//render your react application

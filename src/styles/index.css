@@ -1,3 +1,40 @@
 /* 
     General Styles
 */
+
+
+
+body {
+    background-color: rgb(241, 238, 238);
+    
+}
+.card {
+    margin: 50px auto;
+    width: 500px;
+    box-shadow: black;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px grey;
+    padding: 15px;
+    font-family: cursive;
+}
+
+
+button {
+    background: transparent;
+    border: none;
+    float: right;
+
+}
+
+.todosTitle {
+    color: rgb(189, 131, 131);
+    text-shadow: 2px 2px black;
+    font-size: 75px;
+}
+
+.tasksLeft {
+    text-align: end;
+    font-size: 12px;
+    color: rgb(175, 175, 175);
+    font-family:'Times New Roman', Times, serif
+}
